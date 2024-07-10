@@ -1,0 +1,29 @@
+@mixin display($items, $space, $gap){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $gap;
+}
+@mixin textstyle($mb,$fs,$fw,$clr, $lh,$case ){
+    margin-bottom: $mb;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $clr;
+    line-height: $lh;
+    text-transform: $case;
+}
+@mixin buttonstayle($btn_w, $btn_py, $btn_bg_clr, $btn_br_radius, $btn_border_clr, $btn_fs,$btn_fw,$btn_lh,$btn_clr,$btn_case){
+    width: $btn_w;
+    padding: $btn_py;
+    background-color: $btn_bg_clr;
+    border-radius: $btn_br_radius;
+    border: $btn_border_clr;
+    transition: all 0.3s linear;
+    font-size: $btn_fs;
+    font-weight: $btn_fw;
+    line-height: $btn_lh;
+    color: $btn_bg_clr;
+    cursor: pointer;
+    text-transform: $btn_case;
+
+}
